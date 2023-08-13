@@ -1,0 +1,56 @@
+.header {
+  border-bottom: 1px solid #DADCE0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+  h1 {
+    margin: 0;
+    color: var(--text-100, #1c4980);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    padding: 0 20px;
+  }
+
+  .secondHeading{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+        h2 {
+            color: var(--secondary-1, #0073e6);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding: 0 20px;
+            margin: 0;
+        }
+
+        .hr-line::before{
+            content: '';
+            position: absolute;
+            top: 42px;
+            display: flex;
+            height: 2px;
+            width: 116px;
+            left: 20px;
+            background-color: #0073e6;
+        }
+    }
+  .line::before{
+    content: "";
+    display: flex;
+    background-color: #DADCE0;
+    height: 40px;
+    width: 1px;
+  }
+}

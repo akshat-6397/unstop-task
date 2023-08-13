@@ -1,0 +1,80 @@
+.main-candidate {
+  width: 365px;
+  padding: 16px 20px;
+  border-left: 1px solid #DADCE0;
+
+  @media(max-width: 900px){
+    border-top: 1px solid #DADCE0;
+    border-bottom: 1px solid #DADCE0;
+    padding: 10px 10px;
+    width: 350px;
+  }
+  h2 {
+    color: var(--text-100, #1c4980);
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 0;
+  }
+  .image-text {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+
+    @media(max-width: 900px){
+      margin-top: 8px;
+    }
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
+
+    .head-text {
+        margin-left: 20px;
+        margin-right: 20px;
+      label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            margin: 0;
+          color: var(--text-100, #1c4980);
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
+        }
+
+        span {
+          color: var(--status-success, #05c165);
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 140%;
+        }
+      }
+      h4 {
+        margin: 0;
+        color: #1c4980;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+      }
+    }
+    .line::before{
+        content: "";
+        display: flex;
+        background-color: #DADCE0;
+        height: 40px;
+        width: 1px;
+      }
+  }
+}

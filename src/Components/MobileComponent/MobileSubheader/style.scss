@@ -1,0 +1,46 @@
+.mobile-subheader {
+  display: flex;
+
+  .first {
+    display: flex;
+    height: 30px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-bottom: 2px solid var(--secondary-1, #0073e6);
+    background: #fff;
+
+    h2 {
+      margin: 0;
+      color: var(--secondary-1, #0073e6);
+      font-family: "Inter";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  .second {
+    display: flex;
+    height: 30px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-bottom: 2px solid var(--system-background, #f6f8fa);
+    background: #fff;
+
+    h2 {
+      margin: 0;
+      color: var(--text-85, #3e6493);
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}

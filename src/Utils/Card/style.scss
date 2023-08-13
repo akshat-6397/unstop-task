@@ -1,0 +1,244 @@
+.plus-card {
+  border: 1px dashed #dadce0;
+  background-color: #f6f8fa;
+  border-radius: 12px;
+  max-width: 350px;
+  padding: 30px;
+  font-family: 'Inter', sans-serif;
+
+  @media(max-width: 900px) {
+    padding: 20px;
+  }
+
+  img {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  h2 {
+    color: var(--text-100, #1c4980);
+    text-align: center;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+  }
+
+  p {
+    color: var(--text-100, #1c4980);
+    text-align: center;
+    font-family: "Inter";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.simple-card {
+  border: 1px solid #dadce0;
+  background-color: #f6f8fa;
+  border-radius: 12px;
+  width: 350px;
+  padding: 16px;
+
+  @media (max-width: 900px){
+    width: auto;
+    margin-top: 20px;
+  }
+
+  h1{
+    @media(max-width: 900px){
+      margin-top: 5px;
+    }
+  }
+
+  .bag-dot {
+    display: flex;
+    justify-content: space-between;
+
+    .bag {
+      height: 50px;
+      width: 50px;
+    }
+    .dot {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  .text-calender {
+    display: flex;
+    width: 137px;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      height: 14px;
+      width: 14px;
+    }
+
+    h3 {
+      margin: 0;
+      color: var(--text-100, #1c4980);
+      font-family: "Inter";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+    }
+
+    .line::before {
+      content: "";
+      display: flex;
+      background-color: #dadce0;
+      height: 15px;
+      width: 1px;
+    }
+
+    span {
+      color: var(--primary-50, #8da4bf);
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  hr.hr-line {
+    border-top: 1px dashed #dadce0;
+    margin: 16px 0;
+
+    @media (max-width: 900px){
+      margin: 8px;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      margin: 0;
+      color: var(--text-100, #1c4980);
+      font-family: "Inter";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+    }
+    label {
+      color: var(--text-100, #1c4980);
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+    }
+
+    .right-footer {
+      img {
+        width: 77px;
+        height: 30px;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-right: 10px;
+      }
+
+      .people-image {
+        height: 30px;
+        width: 30px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+.main-dialog {
+  & .custom-paper {
+    border-radius: 8px;
+    margin: 0;
+    max-height: 98vh;
+    // transform: translate(0, 10%);
+    transition: transform 10s ease-in-out;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 545px;
+    padding: 16px;
+    border-bottom: 1px solid #dadce0;
+
+    @media(max-width: 900px){
+      width: 90%;
+    }
+
+      margin: 0;
+      color: var(--text-100, #1c4980);
+      text-align: center;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+  }
+  .content {
+    .name {
+      position: relative;
+      h2 {
+        color: var(--text-100, #1c4980);
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+        margin-top: 10px;
+      }
+
+      input {
+        display: flex;
+        height: 20px;
+        width: 94%;
+        padding: 15px;
+        padding: 15px;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid #dadce0;
+        background: #fff;
+        margin-top: 10px;
+
+        &::placeholder {
+          color: var(--text-100, #1c4980);
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+      img {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 10px;
+        top: 43px;
+      }
+    }
+  }
+  .dialog-footer{
+    .button{
+      margin: 20px 30px;
+      width: 89%;
+      @media(max-width: 900px){
+        width: 82%;
+      }
+    }
+  }
+}
